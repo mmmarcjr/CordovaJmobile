@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Phonegap Cordova Jquery Mobile</title>
+		<meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+		
+		<style>
+			.ui-header{	padding-top: 10px !important;	}
+		</style>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		
+		<div data-role="page" id="page1">
+			<div data-role="header" data-position="fixed" id="p1Header">
+				<a href="javascript:Refresh();" id="refresh" data-role="button" data-icon="refresh">Refresh</a>
+				<h1 id="p1HeaderTile">p1Header</h1>
+			</div>
+			
+			<div data-role="content" id="p1Content" style="background-color: yellow;">
+				<h1 id="p1ContentTile">p1Content</h1>
+			</div>
+			
+			<div data-role="footer" data-position="fixed" id="p1footer">
+				<h1 id="p1footerTile">p1footer</h1>
+			</div>
+		</div>
+		
+	</body>
+</html>
