@@ -44,4 +44,17 @@
 	
 	<preference name="DisallowOverscroll" value="true" />
 	<preference name="Fullscreen" value="false" />
+	
+	<plugin name="cordova-plugin-whitelist" source="npm" version="~1" />
+	<access origin="*" />
+	<allow-intent href="http://code.jquery.com/*" />
+	<allow-intent href="http://maps.google.com/*" />
+	<allow-navigation href="http://maps.google.com/*" />
+	<platform name="android">
+			<allow-intent href="market:*" />
+	</platform>
+	<platform name="ios">
+		<allow-intent href="itms:*" />
+		<allow-intent href="itms-apps:*" />
+	</platform>
 </widget>
