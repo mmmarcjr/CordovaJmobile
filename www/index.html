@@ -5,6 +5,7 @@
 		<meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 		
 		<style>
+			.ui-title {	margin: 0 10px !important; }
 			.ui-header{	padding-top: 10px !important;	}
 		</style>
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
@@ -19,17 +20,18 @@
 		
 		<div data-role="page" id="page1">
 			<div data-role="header" data-position="fixed" id="p1Header">
-				<a href="javascript:Refresh();" id="refresh" data-role="button" data-icon="refresh">Refresh</a>
-				<h1 id="p1HeaderTile">p1Header</h1>
+				<h4 id="p1HeaderTile">p1Header</h4>
 			</div>
 			
 			<div data-role="content" id="p1Content" style="background-color: yellow;">
-				<h1 id="p1ContentTile">p1Content</h1>
+				<div id="p1ContentTile"></div>
 			</div>
 			
-			<div data-role="footer" data-position="fixed" id="p1footer">
-				<h1 id="p1footerTile">p1footer</h1>
-			</div>
+			<div data-role="footer" data-position="fixed" id="p1footer" style="text-align:center">
+				<a href="javascript:Refresh();" class="ui-btn-left" style="margin:0; float:left">Refresh</a>
+				<h4 style="display: inline-block;">p1footer</h4>
+				<a href="javascript:Clean();" class="ui-btn-right" style="margin:0; float:right">Clean</a>
+			</div>			
 		</div>
 		
 	</body>
