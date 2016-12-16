@@ -13,7 +13,7 @@ function Refresh()
 
 function Clean() 
 {
-	$('#p1Content').html('');
+	$('#p1ContentTile').html('');
 }
 
 function onDeviceReady() 
@@ -23,18 +23,18 @@ function onDeviceReady()
 
 function setContentPage1(from)
 {
-	$('#p1Content').html($('#p1Content').html() + 'From: ' + from);
+	$('#p1ContentTile').html($('#p1ContentTile').html() + 'From: ' + from);
 	var screen = $.mobile.getScreenHeight(); 
-	$('#p1Content').html($('#p1Content').html() + ' - screen: ' + screen);
+	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - screen: ' + screen);
 	var header = $("#p1Header").outerHeight();
-	$('#p1Content').html($('#p1Content').html() + ' - p1Header: ' + header);
+	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - p1Header: ' + header);
 	var footer = $("#p1footer").outerHeight();
-	$('#p1Content').html($('#p1Content').html() + ' - p1footer: ' + footer);
+	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - p1footer: ' + footer);
 	var contentCurrent = $("#p1Content").outerHeight() - $("#p1Content").height();
-	$('#p1Content').html($('#p1Content').html() + ' - contentCurrent: ' + contentCurrent);
+	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - contentCurrent: ' + contentCurrent);
 	var content = screen - header - footer - contentCurrent;
-	$('#p1Content').html($('#p1Content').html() + ' - content: ' + content);
-	$('#p1Content').html($('#p1Content').html() + ' - Total: ' + (header + footer + contentCurrent + content) + '<br>');
+	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - content: ' + content);
+	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - Total: ' + (header + footer + contentCurrent + content) + '<br>');
 	
 	$("#p1Content").height(content);
 }
