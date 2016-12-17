@@ -39,7 +39,8 @@ function setContentPage1(from)
 	
 	var content = screen - header - footer - contentCurrent;
 	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - content: ' + content);
+	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - content: ' + (content / 1.5));
 	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - Total: ' + (header + footer + contentCurrent + content) + '<br>');
 	
-	$("#p1Content").height(150);
+	$("#p1Content").height(content / 1.5);
 }
