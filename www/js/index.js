@@ -23,7 +23,7 @@ function onDeviceReady()
 
 function setContentPage1(from)
 {
-	$('#p1ContentTile').html($('#p1ContentTile').html() + 'From: ' + from);
+	/*$('#p1ContentTile').html($('#p1ContentTile').html() + 'From: ' + from);
 	
 	var screen = $.mobile.getScreenHeight(); 
 	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - screen: ' + screen);
@@ -41,5 +41,11 @@ function setContentPage1(from)
 	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - content: ' + content);
 	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - Total: ' + (header + footer + contentCurrent + content) + '<br>');
 	
-	$("#p1Content").height(content);
+	$("#p1Content").height(content);*/
+		var screen = $.mobile.getScreenHeight(),
+    header = $(".ui-header").hasClass("ui-header-fixed") ? $(".ui-header").outerHeight() - 1 : $(".ui-header").outerHeight(),
+    footer = $(".ui-footer").hasClass("ui-footer-fixed") ? $(".ui-footer").outerHeight() - 1 : $(".ui-footer").outerHeight(),
+    contentCurrent = $(".ui-content").outerHeight() - $(".ui-content").height(),
+    content = screen - header - footer - contentCurrent;
+	$(".ui-content").height(content);
 }
