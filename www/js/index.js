@@ -37,9 +37,9 @@ function setContentPage1(from)
 	var contentCurrent = $("#p1Content").outerHeight() - $("#p1Content").height();
 	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - contentCurrent: ' + contentCurrent);
 	
-	var content = screen - header - footer - contentCurrent;
+	var content = Number(screen - header - footer - contentCurrent - 10);
 	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - content: ' + content);
 	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - Total: ' + (header + footer + contentCurrent + content) + '<br>');
 	
-	$("#p1Content").height(Number(content));
+	$("#p1Content").height(content);
 }
