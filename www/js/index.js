@@ -28,13 +28,13 @@ function setContentPage1(from)
 	var screen = $.mobile.getScreenHeight(); 
 	$('#p1ContentTile').append(' - screen: ' + screen);
 	
-	var header = $("#p1Header").outerHeight();
+	var header = $("#p1Header").outerHeight(true);
 	//$('#p1ContentTile').append(' - p1Header: ' + header);
 	
-	var footer = $("#p1footer").outerHeight();
+	var footer = $("#p1footer").outerHeight(true);
 	//$('#p1ContentTile').append(' - p1footer: ' + footer);
 	
-	var contentCurrent = $("#p1Content").outerHeight() - $("#p1Content").height();
+	var contentCurrent = $("#p1Content").outerHeight(true) - $("#p1Content").height();
 	//$('#p1ContentTile').append(' - contentCurrent: ' + contentCurrent);
 	
 	var content = screen - header - footer - contentCurrent;
