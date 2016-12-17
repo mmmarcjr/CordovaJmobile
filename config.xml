@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.cordova.Jmobile" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-	<name>Jquery Mobile</name>
+	<name>Phonegap Cordova Jquery Mobile</name>
 	<description>Phonegap Cordova Jquery Mobile</description>
 	<author email="mmmarcjr@gmail.com" href="http://cordova.io">Marc Morin</author>
 	<content src="index.html" />
