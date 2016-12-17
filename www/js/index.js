@@ -23,23 +23,23 @@ function onDeviceReady()
 
 function setContentPage1(from)
 {
-	$('#p1ContentTile').html($('#p1ContentTile').html() + 'From: ' + from);
+	$('#p1ContentTile').append('From: ' + from);
 	
 	var screen = $.mobile.getScreenHeight(); 
-	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - screen: ' + screen);
+	$('#p1ContentTile').append(' - screen: ' + screen);
 	
 	var header = $("#p1Header").outerHeight();
-	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - p1Header: ' + header);
+	//$('#p1ContentTile').append(' - p1Header: ' + header);
 	
 	var footer = $("#p1footer").outerHeight();
-	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - p1footer: ' + footer);
+	//$('#p1ContentTile').append(' - p1footer: ' + footer);
 	
 	var contentCurrent = $("#p1Content").outerHeight() - $("#p1Content").height();
-	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - contentCurrent: ' + contentCurrent);
+	//$('#p1ContentTile').append(' - contentCurrent: ' + contentCurrent);
 	
 	var content = screen - header - footer - contentCurrent;
-	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - content: ' + content);
-	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - Total: ' + (header + footer + contentCurrent + content) + '<br>');
+	$('#p1ContentTile').append(' - content: ' + content);
+	$('#p1ContentTile').append(' - Total: ' + (header + footer + contentCurrent + content) + '<br>');
 	
 	$("#p1Content").height(content);
 }
