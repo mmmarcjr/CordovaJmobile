@@ -5,6 +5,9 @@
 	<author email="mmmarcjr@gmail.com" href="http://cordova.io">Marc Morin</author>
 	<content src="index.html" />
 	
+	<plugin name="cordova-plugin-whitelist" source="npm" version="~1" />
+	<plugin name="cordova-plugin-splashscreen" source="npm" version="~4" />
+	
 	<icon src="icon.png" />
 	<icon platform="ios" src="res/icons/ios/icon-small.png" width="29" height="29" />
 	<icon platform="ios" src="res/icons/ios/icon-small-2x.png" width="58" height="58" />
@@ -44,9 +47,6 @@
 	
 	<preference name="DisallowOverscroll" value="true" />
 	<preference name="Fullscreen" value="false" />
-	
-	<plugin name="cordova-plugin-whitelist" source="npm" version="~1" />
-	<plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
 	
 	<access origin="*" />
 	<allow-intent href="http://code.jquery.com/*" />
