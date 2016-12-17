@@ -41,5 +41,5 @@ function setContentPage1(from)
 	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - content: ' + content);
 	$('#p1ContentTile').html($('#p1ContentTile').html() + ' - Total: ' + (header + footer + contentCurrent + content) + '<br>');
 	
-	$("#p1Content").height(178);
+	$("#p1Content").height(179);
 }
